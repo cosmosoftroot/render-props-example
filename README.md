@@ -1,4 +1,6 @@
-# React Basic Base
+# Render props example
+
+This is an example of how render props work. Enjoy with the cat!!!
 
 ## Features
 

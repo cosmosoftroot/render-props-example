@@ -1,30 +1,27 @@
 import React from 'react'
 import './styles.css'
 
-export default class MouseMove extends React.Component{
-
-  constructor(props) {
+export default class MouseMove extends React.Component {
+  constructor (props) {
     super(props)
     this.handleMouseMove = this.handleMouseMove.bind(this)
     this.state = {
-      x:0,y:0
+      x: 0, y: 0
     }
   }
 
-  handleMouseMove(event){
+  handleMouseMove (event) {
     this.setState({
-        x: event.clientX,
-        y: event.clientY
+      x: event.clientX,
+      y: event.clientY
     })
   }
 
-  render(){
+  render () {
     return (
       <div className='main' onMouseMove={this.handleMouseMove}>
-          {this.props.render(this.state)}
+        {this.props.render(this.state)}
       </div>
     )
-
   }
-
 }

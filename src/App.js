@@ -7,7 +7,7 @@ export const App = () => {
   console.log(process.env)
   return (
     <BrowserRouter>
-       <Switch>
+      <Switch>
         <Route exact path='/' component={Home} />
       </Switch>
     </BrowserRouter>
