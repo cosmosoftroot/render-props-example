@@ -1,0 +1,8 @@
+.catimg{
+    max-width: 80px;
+    box-sizing: border-box;
+}
+
+.catimg img{
+    width: 100%;
+}
